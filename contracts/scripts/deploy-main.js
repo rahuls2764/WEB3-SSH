@@ -4,8 +4,8 @@ const { ethers } = require("hardhat");
 async function main() {
   const [deployer] = await ethers.getSigners();
 
-  const tokenAddress = "0xc214a458456003FAAd6d06749E8609b066EB3495"; // ✅ Your deployed SkillBridgeToken
-  const nftAddress = "0xD8c55679f0fB9b7f36cB48e8b0AA24AeFD7354b2";   // ✅ Your deployed SkillBridgeNFT
+  const tokenAddress = "0xd0468487E22A2f10E84cec0dB23711801cfbEA0b"; // ✅ Your deployed SkillBridgeToken
+  const nftAddress = "0x7A1F0F2273365674677C379F48952A683Fa84446";   // ✅ Your deployed SkillBridgeNFT
 
   const Main = await ethers.getContractFactory("SkillBridgeMain");
   const mainContract = await Main.deploy(tokenAddress, nftAddress, deployer.address);

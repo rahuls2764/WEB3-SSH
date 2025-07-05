@@ -176,7 +176,7 @@ const Profile = () => {
   }
 
   return (
-    <div className="max-w-6xl mx-auto p-6 text-white">
+    <div className="max-w-6xl mx-auto p-6 text-black">
       <div className="flex justify-between items-center mb-8">
         <div className='text-black'>
           <h1 className="text-3xl font-bold">My Profile</h1>
