@@ -49,7 +49,7 @@ We also solved another pain point:
 
 ## 🌐 Live Demo
 
-* 🌍 Frontend: [https://skillbridgedapp-iucb.vercel.app](https://web-3-ssh.vercel.app/)
+* 🌍 Frontend: [https://web-3-ssh.vercel.app/](https://web-3-ssh.vercel.app/)
 * 🛠️ Backend API: [https://skillbridgedapp.onrender.com](https://skillbridgedapp.onrender.com)
 
 ---
