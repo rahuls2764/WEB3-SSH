@@ -1,0 +1,26 @@
+{
+  "name": "skillbridge-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "cd skillbridgedapp && npm run dev",
+    "dev:backend": "cd backend && nodemon index.js",
+    "compile": "cd contracts && npx hardhat compile",
+    "deploy": "cd contracts && npx hardhat run scripts/deploy-main.js --network sepolia",
+    "test": "cd contracts && npx hardhat test",
+    "copy-abi": "powershell -Command \"New-Item -ItemType Directory -Force skillbridgedapp/src/abi; Copy-Item contracts/artifacts/*/*.json -Destination skillbridgedapp/src/abi -Recurse\""
+
+  },
+  "workspaces": [
+    "contracts",
+    "backend",
+    "skillbridgedapp"
+  ],
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.3.0",
+    "dotenv": "^16.5.0",
+    "ethers": "^6.14.4",
+    "hardhat": "^2.24.3"
+  }
+}
